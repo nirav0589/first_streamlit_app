@@ -48,7 +48,7 @@ streamlit.dataframe(my_data_rows)
 #This will not work correctly, but just go with it for now
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
-
+streamlit. header('Fruityvice Fruit Advice!')
 def get_fruityvice_data(this_fruit_choice):
   fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
   fruityvice_normalized = pandas. json_normalize(fruityvice_response.json ())
